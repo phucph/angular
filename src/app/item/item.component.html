@@ -1,0 +1,26 @@
+<section id="showcase" class="showcase-area pt-100 pb-130">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="showcase-title pt-25">
+          <h2 class="title">{{product.furniture.name}}</h2>
+        </div> <!-- showcase title -->
+      </div>
+      <div class="col-lg-6">
+        <div class="showcase-title pt-25">
+          <p>{{product.furniture.description}}</p>
+        </div> <!-- showcase title -->
+      </div>
+    </div> <!-- row -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="showcase-active mt-65">
+          <div class="single-showcase">
+            <img src="../../assets/images/showcase/{{product.furniture.image_thumb}}">
+            <a (click)="getBack()" class="main-btn"><i class="lni-backward"></i> Quay lại </a>
+          </div> <!-- single showcase -->
+        </div> <!-- showcase active -->
+      </div>
+    </div> <!-- row -->
+  </div> <!-- container -->
+</section>
