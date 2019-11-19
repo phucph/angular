@@ -71,15 +71,16 @@ export const configuration = {
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
     button: 'Read More'
   },
-  team: {
-    tagline: 'Our Expert Team',
+  team : {
+    tagline: 'ĐỘI CỦA CHÚNG TÔI',
     // tslint:disable-next-line:max-line-length
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua.',
-    member: [
-      {image: '#', name: 'Hồng Phúc', position: 'FOUNDER', linkfb: ''},
-      {image: '#', name: 'Quang Minh', position: 'CONSULTANT', linkfb: ''},
-      {image: '#', name: 'Thu Hà', position: 'MARKETING', linkfb: ''},
-      {image: '#', name: 'Lê Hằng', position: 'BUSINESS', linkfb: ''},
+    description: 'Mang đến cho bạn sự phục vụ tốt nhất.',
+    member : [
+      { image: '#', name: 'Hồng Phúc', position: 'FOUNDER', linkfb: ''},
+      { image: '#', name: 'Quang Minh', position: 'CONSULTANT', linkfb: ''},
+      { image: '#', name: 'Thu Hà', position: 'MARKETING', linkfb: ''},
+      { image: '#', name: 'Hương Giang', position: 'MATERIAL', linkfb: ''},
+      { image: '#', name: 'Lê Hằng', position: 'BUSINESS', linkfb: ''},
     ]
   },
   blog: {
