@@ -1,34 +1,35 @@
 <!--====== PRODUCT PART START ======-->
-
 <section id="product" class="product-area pt-100 pb-130">
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-4">
-        <app-navigation></app-navigation>
+        <app-navigation (buttonClicked)="OnbuttonClick($event)"></app-navigation>
       </div>
       <div class="col-lg-9 col-md-8">
         <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel" aria-labelledby="v-pills-furniture-tab">
-            <div class="product-items mt-30" >
-              <div class="row product-items-active" >
+          <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel"
+               aria-labelledby="v-pills-furniture-tab">
+            <div class="product-items mt-30">
+              <div class="row product-items-active">
                 <div class="col-md-4" *ngFor="let furniture of product.furniture">
                   <div class="single-product-items">
                     <div class="product-item-image">
                       <a href="#"><img src="../../assets/images/product/{{furniture.image}}" alt="Product"></a>
                       <div class="product-discount-tag">
-                        <p>-60%</p>
+                        <p>{{furniture.km}} </p>
                       </div>
                     </div>
                     <div class="product-item-content text-center mt-30">
-                      <h5 class="product-title"><a href="#">{{furniture.name}}</a></h5>
+                      <h5 class="product-title">
+                        <a routerLink="/Item/{{furniture.id}}">{{furniture.name}} </a></h5>
                       <ul class="rating">
                         <li><i class="lni-star-filled"></i></li>
                         <li><i class="lni-star-filled"></i></li>
                         <li><i class="lni-star-filled"></i></li>
                         <li><i class="lni-star-filled"></i></li>
                       </ul>
-                      <span class="regular-price">$49.00</span>
-                      <span class="discount-price">$69.00</span>
+                      <span class="regular-price">{{furniture.price}}</span>
+                      <span class="discount-price">{{furniture.discount}}</span>
                     </div>
                   </div> <!-- single product items -->
                 </div>
@@ -40,5 +41,4 @@
     </div> <!-- row -->
   </div> <!-- container -->
 </section>
-
 <!--====== PRODUCT PART ENDS ======-->

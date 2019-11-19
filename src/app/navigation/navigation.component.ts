@@ -8,23 +8,26 @@ import {ConfigService} from '../config.service';
 export class NavigationComponent implements OnInit, OnChanges {
   activetab = 'furniture';
   @Input() text: string ;
-  @Output() buttonClicked: EventEmitter<any> = new EventEmitter<any>();
-  constructor(private  config: ConfigService) { }
-  OnClick() {
-    this.buttonClicked.emit();
-  }
+  @Output() buttonClicked: EventEmitter<string> = new EventEmitter<string>();
+  constructor(private  config: ConfigService) {}
   ngOnInit() {
+    // console.log( this.getParam());
     this.getHeader();
   }
   ngOnChanges(changes: SimpleChanges): void {
 
   }
-
+  getParam() {
+    return this.text;
+  }
   getHeader() {
     return this.config.getConfig().product;
   }
   getActiveTab(tabname: string) {
     this.activetab = tabname;
+    this.text = tabname;
+    this.buttonClicked.emit(this.text);
+
   }
 
 }

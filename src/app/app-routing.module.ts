@@ -8,7 +8,7 @@ import { TeamComponent } from './team/team.component';
 import { BlogComponent } from './blog/blog.component';
 import { ContactComponent } from './contact/contact.component';
 import { SliderComponent } from './slider/slider.component';
-
+import { ItemComponent} from './item/item.component';
 
 
 const appRoutes: Routes = [
@@ -21,7 +21,8 @@ const appRoutes: Routes = [
   { path: 'Services', component: ServiceComponent },
   { path: 'Team', component: TeamComponent },
   { path: 'Blog', component: BlogComponent },
-  { path: 'Contact', component: ContactComponent }
+  { path: 'Contact', component: ContactComponent },
+  { path: 'Item/:id', component: ItemComponent}
 ];
 @NgModule({
   declarations: [],

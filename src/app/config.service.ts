@@ -10,4 +10,7 @@ export class ConfigService {
   getConfig() {
     return this.config;
   }
+  getProductById(id: number) {
+    return this.config.product.furniture[id - 1];
+  }
 }

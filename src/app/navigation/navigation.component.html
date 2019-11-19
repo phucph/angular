@@ -1,14 +1,14 @@
 <div class="collection-menu text-center mt-30">
   <h4 class="collection-tilte">OUR COLLECTION</h4>
   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <a class="active" (click)="OnClick()">Furniture</a>
+    <a (click)="getActiveTab('furniture')" [class.active]="activetab === 'furniture'"> Furniture</a>
 
-    <a id="v-pills-decorative-tab" data-toggle="pill" href="#v-pills-decorative" role="tab" aria-controls="v-pills-decorative" aria-selected="false">Decorative</a>
+    <a (click)="getActiveTab('decorative')" [class.active]="activetab === 'decorative'">Decorative</a>
 
-    <a id="v-pills-lighting-tab" data-toggle="pill" href="#v-pills-lighting" role="tab" aria-controls="v-pills-lighting" aria-selected="false">Lighting</a>
+    <a (click)="getActiveTab('lighting')" [class.active]="activetab === 'lighting'">Lighting</a>
 
-    <a id="v-pills-outdoor-tab" data-toggle="pill" href="#v-pills-outdoor" role="tab" aria-controls="v-pills-outdoor" aria-selected="false">Outdoor</a>
+    <a (click)="getActiveTab('outdoor')" [class.active]="activetab === 'outdoor'">Outdoor</a>
 
-    <a id="v-pills-storage-tab" data-toggle="pill" href="#v-pills-storage" role="tab" aria-controls="v-pills-storage" aria-selected="false">Storage</a>
+    <a (click)="getActiveTab('storage')" [class.active]="activetab === 'storage'">Storage</a>
   </div> <!-- nav -->
 </div> <!-- collection menu -->

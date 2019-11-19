@@ -9,7 +9,8 @@ import {ConfigService} from '../config.service';
 export class BlogComponent implements OnInit {
   blog = {
     tagline: undefined,
-    description: undefined
+    description: undefined,
+    feature: undefined
   };
   constructor(private config: ConfigService) { }
   ngOnInit() {
