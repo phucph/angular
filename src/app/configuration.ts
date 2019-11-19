@@ -59,17 +59,17 @@ export const configuration = {
     ]
   },
   slider: {
-    tagline: 'Sofa and Armchairs',
-    description: 'One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.',
-    button: 'Explore More'
+    tagline: 'Ghế sofa và ghế tay vịn',
+    description: 'Mang lại cho bạn cảm giác thoải mái khi sử dụng.',
+    button: 'Tìm hiểu thêm'
   },
   service: {
-    tag: 'Our Date',
-    tagline: 'Build Your Sweet Home',
+    tag: 'Sứ mệnh của chúng tôi',
+    tagline: 'Xây dựng ngôi nhà hoàn mỹ cho các bạn',
     imagelink: '../assets/images/services/services.jpg',
     // tslint:disable-next-line:max-line-length
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm od tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.',
-    button: 'Read More'
+    description: 'Với kinh nghiệm nhiều năm trong lĩnh vực thiết kế, tư vấn, thi công nội thất nhà đất. Chúng tôi tự hào mang đến cho bạn sự phục vụ tuyệt vời nhất.',
+    button: 'Đọc thêm'
   },
   team : {
     tagline: 'ĐỘI CỦA CHÚNG TÔI',
@@ -84,7 +84,7 @@ export const configuration = {
     ]
   },
   blog: {
-    tagline: 'My Blog',
+    tagline: 'Blog của chúng tôi',
     description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.',
    feature: [
      {image: 'b-1.jpg', title: 'Tình yêu và biển cả', by: 'Hồng Phúc', date: '25 JULY, 2018', i: 'admin1.jpg'},
