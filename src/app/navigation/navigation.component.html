@@ -1,14 +1,19 @@
 <div class="collection-menu text-center mt-30">
   <h4 class="collection-tilte">Bộ sưu tập</h4>
   <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-    <a (click)="getActiveTab('furniture')" [class.active]="activetab === 'furniture'"> Nội thất</a>
+    <a id="v-pills-furniture-tab" data-toggle="pill" (click)="getActiveTab('furniture')"
+       [class.active]="activetab === 'furniture'"> Nội thất</a>
 
-    <a (click)="getActiveTab('decorative')" [class.active]="activetab === 'decorative'">Trang trí</a>
+    <a id="v-pills-decorative-tab" data-toggle="pill" (click)="getActiveTab('decorative')"
+       [class.active]="activetab === 'decorative'">Trang trí</a>
 
-    <a (click)="getActiveTab('lighting')" [class.active]="activetab === 'lighting'">Ánh sáng</a>
+    <a id="v-pills-lighting-tab" data-toggle="pill" (click)="getActiveTab('lighting')"
+       [class.active]="activetab === 'lighting'">Ánh sáng</a>
 
-    <a (click)="getActiveTab('outdoor')" [class.active]="activetab === 'outdoor'">Ngoài trời</a>
+    <a id="v-pills-outdoor-tab" data-toggle="pill" (click)="getActiveTab('outdoor')"
+       [class.active]="activetab === 'outdoor'">Ngoài trời</a>
 
-    <a (click)="getActiveTab('storage')" [class.active]="activetab === 'storage'">Nhà kho</a>
+    <a id="v-pills-storage-tab" data-toggle="pill" (click)="getActiveTab('storage')"
+       [class.active]="activetab === 'storage'">Nhà bếp</a>
   </div> <!-- nav -->
 </div> <!-- collection menu -->

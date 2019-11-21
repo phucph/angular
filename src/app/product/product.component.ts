@@ -18,15 +18,30 @@ export class ProductComponent implements OnInit {
   };
   constructor(private config: ConfigService) {}
   OnbuttonClick(event: string) {
-    console.log(event);
     this.text = event;
+    console.log(this.text);
   }
   ngOnInit() {
-
-    this.product.furniture = this.getProduct();
+    this.product.furniture = this.getProductFurniture();
+    this.product.decorative = this.getProductDecorative();
+    this.product.lighting = this.getProductLighting();
+    this.product.outdoor = this.getProductOutdoor();
+    this.product.storage = this.getProductStorage();
   }
-  getProduct() {
+  getProductFurniture() {
       return this.config.getConfig().product.furniture;
+  }
+  getProductDecorative() {
+    return this.config.getConfig().product.decorative;
+  }
+  getProductLighting() {
+    return this.config.getConfig().product.lighting;
+  }
+  getProductOutdoor() {
+    return this.config.getConfig().product.outdoor;
+  }
+  getProductStorage() {
+    return this.config.getConfig().product.storage;
   }
 
 }

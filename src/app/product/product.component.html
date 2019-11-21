@@ -6,9 +6,9 @@
         <app-navigation (buttonClicked)="OnbuttonClick($event)"></app-navigation>
       </div>
       <div class="col-lg-9 col-md-8">
-        <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-content" id="v-pills-tabContent" [ngSwitch]="text">
           <div class="tab-pane fade show active" id="v-pills-furniture" role="tabpanel"
-               aria-labelledby="v-pills-furniture-tab">
+               aria-labelledby="v-pills-furniture-tab" *ngSwitchCase="'furniture'">
             <div class="product-items mt-30">
               <div class="row product-items-active">
                 <div class="col-md-4" *ngFor="let furniture of product.furniture">
@@ -35,10 +35,155 @@
                 </div>
               </div> <!-- row -->
             </div> <!-- product items -->
-          </div> <!-- tab pane -->
-        </div> <!-- tab content -->
+          </div><!-- tab pane -->
+          <div class="tab-pane fade show active" id="v-pills-decorative" role="tabpanel"
+               aria-labelledby="v-pills-furniture-tab" *ngSwitchCase="'decorative'">
+            <div class="product-items mt-30">
+              <div class="row product-items-active">
+                <div class="col-md-4" *ngFor="let decorative of product.decorative">
+                  <div class="single-product-items">
+                    <div class="product-item-image">
+                      <a href="#"><img src="../../assets/images/product/{{decorative.image}}" alt="Product"></a>
+                      <div class="product-discount-tag">
+                        <p>{{decorative.km}} </p>
+                      </div>
+                    </div>
+                    <div class="product-item-content text-center mt-30">
+                      <h5 class="product-title">
+                        <a routerLink="/Item/{{decorative.id}}">{{decorative.name}} </a></h5>
+                      <ul class="rating">
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                      </ul>
+                      <span class="regular-price">{{decorative.price}}</span>
+                      <span class="discount-price">{{decorative.discount}}</span>
+                    </div>
+                  </div> <!-- single product items -->
+                </div>
+              </div> <!-- row -->
+            </div> <!-- product items -->
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-lighting" role="tabpanel"
+               aria-labelledby="v-pills-furniture-tab"  *ngSwitchCase="'lighting'">
+            <div class="product-items mt-30">
+              <div class="row product-items-active">
+                <div class="col-md-4" *ngFor="let lighting of product.lighting">
+                  <div class="single-product-items">
+                    <div class="product-item-image">
+                      <a href="#"><img src="../../assets/images/product/{{lighting.image}}" alt="Product"></a>
+                      <div class="product-discount-tag">
+                        <p>{{lighting.km}} </p>
+                      </div>
+                    </div>
+                    <div class="product-item-content text-center mt-30">
+                      <h5 class="product-title">
+                        <a routerLink="/Item/{{lighting.id}}">{{lighting.name}} </a></h5>
+                      <ul class="rating">
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                      </ul>
+                      <span class="regular-price">{{lighting.price}}</span>
+                      <span class="discount-price">{{lighting.discount}}</span>
+                    </div>
+                  </div> <!-- single product items -->
+                </div>
+              </div> <!-- row -->
+            </div> <!-- product items -->
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-outdoor" role="tabpanel"
+               aria-labelledby="v-pills-furniture-tab"  *ngSwitchCase="'outdoor'">
+            <div class="product-items mt-30">
+              <div class="row product-items-active">
+                <div class="col-md-4" *ngFor="let outdoor of product.outdoor">
+                  <div class="single-product-items">
+                    <div class="product-item-image">
+                      <a href="#"><img src="../../assets/images/product/{{outdoor.image}}" alt="Product"></a>
+                      <div class="product-discount-tag">
+                        <p>{{outdoor.km}} </p>
+                      </div>
+                    </div>
+                    <div class="product-item-content text-center mt-30">
+                      <h5 class="product-title">
+                        <a routerLink="/Item/{{outdoor.id}}">{{outdoor.name}} </a></h5>
+                      <ul class="rating">
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                      </ul>
+                      <span class="regular-price">{{outdoor.price}}</span>
+                      <span class="discount-price">{{outdoor.discount}}</span>
+                    </div>
+                  </div> <!-- single product items -->
+                </div>
+              </div> <!-- row -->
+            </div> <!-- product items -->
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-storage" role="tabpanel"
+               aria-labelledby="v-pills-furniture-tab"  *ngSwitchCase="'storage'">
+            <div class="product-items mt-30">
+              <div class="row product-items-active">
+                <div class="col-md-4" *ngFor="let storage of product.storage">
+                  <div class="single-product-items">
+                    <div class="product-item-image">
+                      <a href="#"><img src="../../assets/images/product/{{storage.image}}" alt="Product"></a>
+                      <div class="product-discount-tag">
+                        <p>{{storage.km}} </p>
+                      </div>
+                    </div>
+                    <div class="product-item-content text-center mt-30">
+                      <h5 class="product-title">
+                        <a routerLink="/Item/{{storage.id}}">{{storage.name}} </a></h5>
+                      <ul class="rating">
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                      </ul>
+                      <span class="regular-price">{{storage.price}}</span>
+                      <span class="discount-price">{{storage.discount}}</span>
+                    </div>
+                  </div> <!-- single product items -->
+                </div>
+              </div> <!-- row -->
+            </div> <!-- product items -->
+          </div>
+          <div class="tab-pane fade show active" id="v-pills-default" role="tabpanel"
+               aria-labelledby="v-pills-furniture-tab" *ngSwitchDefault>
+            <div class="product-items mt-30">
+              <div class="row product-items-active">
+                <div class="col-md-4" *ngFor="let furniture of product.furniture">
+                  <div class="single-product-items">
+                    <div class="product-item-image">
+                      <a href="#"><img src="../../assets/images/product/{{furniture.image}}" alt="Product"></a>
+                      <div class="product-discount-tag">
+                        <p>{{furniture.km}} </p>
+                      </div>
+                    </div>
+                    <div class="product-item-content text-center mt-30">
+                      <h5 class="product-title">
+                        <a routerLink="/Item/{{furniture.id}}">{{furniture.name}} </a></h5>
+                      <ul class="rating">
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                        <li><i class="lni-star-filled"></i></li>
+                      </ul>
+                      <span class="regular-price">{{furniture.price}}</span>
+                      <span class="discount-price">{{furniture.discount}}</span>
+                    </div>
+                  </div> <!-- single product items -->
+                </div>
+              </div> <!-- row -->
+            </div> <!-- product items -->
+          </div>
+        </div>
       </div>
-    </div> <!-- row -->
-  </div> <!-- container -->
+    </div><!-- row -->
+  </div><!-- container -->
 </section>
 <!--====== PRODUCT PART ENDS ======-->
