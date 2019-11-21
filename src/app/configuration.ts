@@ -264,11 +264,11 @@ export const configuration = {
     // tslint:disable-next-line:max-line-length
     description: 'Mang đến cho bạn sự phục vụ tốt nhất.',
     member : [
-      { image: '#', name: 'Hồng Phúc', position: 'FOUNDER', linkfb: ''},
-      { image: '#', name: 'Quang Minh', position: 'CONSULTANT', linkfb: ''},
-      { image: '#', name: 'Thu Hà', position: 'MARKETING', linkfb: ''},
-      { image: '#', name: 'Hương Giang', position: 'MATERIAL', linkfb: ''},
-      { image: '#', name: 'Lê Hằng', position: 'BUSINESS', linkfb: ''},
+      { image: 'admin1.jpg', name: 'Hồng Phúc', position: 'FOUNDER', linkfb: ''},
+      { image: 'admin3.jpg', name: 'Quang Minh', position: 'CONSULTANT', linkfb: ''},
+      { image: 'admin2.jpg', name: 'Thu Hà', position: 'MARKETING', linkfb: ''},
+      { image: 'admin4.jpg', name: 'Hương Giang', position: 'MATERIAL', linkfb: ''},
+      { image: 'admin5.jpg', name: 'Lê Hằng', position: 'BUSINESS', linkfb: ''},
     ]
   },
   blog: {
